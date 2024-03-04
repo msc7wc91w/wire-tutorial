@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Message string
 
@@ -34,9 +36,7 @@ func (e Event) Start() {
 }
 
 func main() {
-	message := NewMessage()
-	greeter := NewGreeter(message)
-	event := NewEvent(greeter)
+	e := InitializeEvent()
 
-	event.Start()
+	e.Start()
 }
