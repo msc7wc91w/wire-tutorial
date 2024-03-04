@@ -1,1 +1,1 @@
-package wire_tutorial
+package main
